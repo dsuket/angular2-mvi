@@ -4,14 +4,9 @@ import {FORM_DIRECTIVES, Control} from "angular2/common";
 
 @Component({
   selector: 'bmi',
-  styles: [`
-    .label {
-      display: inline-block;
-      width: 64px;
-    }
-  `],
+  styles: [require('./bmi.component.scss')],
   template:`
-    <div>
+    <div class="bmi-calc">
       <div class="weight">
         <div class="label">Weight: </div>        
         <input id="#weight" type="range" min="40" max="140" [ngFormControl]="weightCtrl">
@@ -22,7 +17,7 @@ import {FORM_DIRECTIVES, Control} from "angular2/common";
         <input id="#height" type="range" min="140" max="210" [ngFormControl]="heightCtrl">
         {{height$ | async}} cm
       </div>
-      <h2>BMI is {{bmi$ | async}}</h2>
+      <h3>BMI is {{bmi$ | async}}</h3>
     </div>
   `,
   directives: [FORM_DIRECTIVES],
