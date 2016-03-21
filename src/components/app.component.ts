@@ -1,14 +1,14 @@
 import {Component} from "angular2/core";
-import {KiyoshiComponent} from "./kiyoshi.component";
+import {BmiComponent} from "./bmi.component";
 
 @Component({
   selector: 'my-app',
   template:`
     <div class="components">
-      <kiyoshi></kiyoshi>
+      <bmi></bmi>
     </div>
   `,
-  directives: [KiyoshiComponent],
+  directives: [BmiComponent],
 })
 
 export class AppComponent {}

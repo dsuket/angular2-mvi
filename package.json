@@ -1,8 +1,8 @@
 {
-  "name": "ng-japan-example",
+  "name": "angular2-mvi",
   "version": "0.0.1",
-  "description": "ng-japan用のサンプルアプリケーション",
-  "author": "Shumpei Shiraishi <s@openweb.co.jp>",
+  "description": "Angular2 MVI sample",
+  "author": "Daisuke.Takaoka",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
