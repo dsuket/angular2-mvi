@@ -1,1 +1,4 @@
-## ng-japan-2016用のサンプル
+## Angular2 MVI
+
+Angular2 で MVI を実装するサンプル
+
